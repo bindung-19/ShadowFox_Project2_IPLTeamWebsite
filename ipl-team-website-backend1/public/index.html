@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RCB Fan Hub</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    .title-wrapper {
+      display: block;
+      width: 100%;
+    }
+    .main-title {
+      display: block;
+      margin-bottom: 0;
+    }
+    .subtitle {
+      display: block;
+      font-size: 1.2rem;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+ <header class="custom-header text-white py-3" style="background-color: #da1818;">
+  <div class="container-fluid px-4"> <!-- Use container-fluid for full-width + less padding -->
+    <div class="row">
+      <div class="col-md-7 col-lg-6 d-flex align-items-center" style="margin-left: -30px;">
+        <img src="assets/images/team-logo.png" alt="RCB Logo" width="80" class="me-5" />
+        <div class="text-start">
+          <h1 class="main-title mb-0">ನಮ್ಮ <span style="color: #ffff; font-weight: bold;">RCB</span> - ನಮ್ಮ ಹೆಮ್ಮೆ!</h1>
+          <span class="subtitle" style="font-weight: normal;">An Official Fan Hub Of Royal Challengers Bengaluru</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
+  <div class="d-flex ms-5"> <!-- Add margin-start here -->
+    <a class="navbar-brand" href="#">Home</a>
+    <div class="navbar-nav">
+      <a class="nav-link" href="#schedule">Schedule</a>
+      <a class="nav-link" href="#players">Players</a>
+      <a class="nav-link" href="#stats">Statistics</a>
+      <a class="nav-link" href="#news">News</a>
+      <a class="nav-link" href="#engage">Fan Zone</a>
+    </div>
+  </div>
+</nav>
+
+  <main class="container my-4">
+    <section id="schedule">
+  <h2 class="mb-4 text-center">Upcoming Matches</h2>
+  <div id="matchSchedule" class="match-container"></div>
+</section>
+
+    <section id="players" class="mt-4">
+  <h2>Meet the Players</h2>
+  <div class="card-container" id="playerCards"></div>
+</section>
+
+<script src="js/script.js"></script>
+
+
+    <section id="stats" class="mt-4">
+      <h2>Team Statistics</h2>
+      <div id="teamStats" class="team-stats-box"></div>
+
+    </section>
+
+    <section id="news" class="mt-4">
+  <h2 class="mb-4 text-center">Latest News</h2>
+  <div class="news-container">
+    <div class="news-item">You deserve it - Rajat Patidar reveals how Virat Kohli welcomed him as the new RCB captain.</div>
+    <div class="news-item">IPL 2025 to resume on May 17th with RCB-KKR clash at Bengaluru</div>
+    <div class="news-item">Virat Kohli announces his retirement from Test cricket</div>
+    <div class="news-item">IPL 2025 suspended for a week by BCCI amidst growing tensions</div>
+    <div class="news-item">RCB clinch historic thriller at Chinnaswamy moving to the top of points table</div>
+    <div class="news-item">Virat Kohli explains the feeling of sticking with RCB for 18 years</div>
+  </div>
+</section>
+
+
+    <section id="engage" class="mt-4">
+      <h2 class="mb-4 text-center">Fan Zone</h2>
+      <form id="pollForm">
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+
+    <!-- Favorite Player -->
+    <div class="poll-box fan-card">
+      <label class="fw-bold">Who is your favorite RCB player?</label><br/>
+      <input type="radio" name="vote1" value="Kohli"> Virat Kohli<br/>
+      <input type="radio" name="vote1" value="Hazlewood"> Josh Hazlewood<br/>
+      <input type="radio" name="vote1" value="Patidar"> Rajat Patidar<br/>
+      <button class="btn btn-primary mt-2">Submit</button>
+    </div>
+
+    <!-- Captain Choice -->
+    <div class="poll-box fan-card">
+      <label class="fw-bold">Whom do you wish to see as next season RCB Captain?</label><br/>
+      <input type="radio" name="vote2" value="Kohli"> Virat Kohli<br/>
+      <input type="radio" name="vote2" value="Padikkal"> Devdutt Padikkal<br/>
+      <input type="radio" name="vote2" value="Patidar"> Rajat Patidar<br/>
+      <button class="btn btn-primary mt-2">Submit</button>
+    </div>
+
+    <!-- Best Bowler -->
+    <div class="poll-box fan-card">
+      <label class="fw-bold">Who is the best bowler for RCB this season?</label><br/>
+      <input type="radio" name="vote3" value="Hazlewood"> Josh Hazlewood<br/>
+      <input type="radio" name="vote3" value="Pandya"> Krunal Pandya<br/>
+      <input type="radio" name="vote3" value="Dayal"> Yash Dayal<br/>
+      <button class="btn btn-primary mt-2">Submit</button>
+    </div>
+  </div>
+</form>
+</section>
+  </main>
+
+  <footer class="text-center text-white py-3"  style="background-color: #da1818;">
+    &copy; 2025 RCB Fan Hub. All Rights Reserved | Created by Bindu N G
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f5f4;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* Navbar */
+nav {
+  background-color: #da1a32;
+  padding: 1rem 2rem;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Section Headings */
+h2 {
+  margin: 30px 0 15px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #da1a32;
+}
+
+/* Player Card Grid */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 10px 0 5px;
+  color: #111;
+}
+
+.card-content p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* Responsive spacing */
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.custom-header {
+  background-color: #000; /* same as bg-dark */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 100px; /* adjust this value to move right */
+}
+
+.custom-header img {
+  margin-right: 20px;
+}
+
+
+.custom-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.card-content i {
+  margin-right: 6px;
+  color: #da1a32; /* RCB red */
+}
+
+.role-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+/* Make sure .card has relative positioning */
+.card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.icon-mono {
+  color: black;
+  font-size: 1.5rem;
+  filter: grayscale(100%);
+}
+
+.role-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.card {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 200px;
+  margin: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.player-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.role-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 4px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.role-badge img.role-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.role-icon {
+  width: 20px !important;
+  height: 20px !important;
+  object-fit: contain;
+}
+
+.large-icon {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.medium-icon{
+  width: 29px !important;
+  height: 29px !important;
+}
+
+.verylarge-icon{
+  width: 36px !important;
+  height: 36px !important;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #ccc;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.custom-header {
+  background-color: #da1818; /* RCB red */
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.news-item {
+  background-color: #ffffff;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.match-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.match-card {
+  background-color: #ffffff;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  transition: transform 0.2s ease;
+}
+
+.match-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.team-stats-box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.fan-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.fan-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#pollForm {
+  gap: 3rem;
+}
+
+.sub-header {
+  background-color: #ffe6e6; /* Light RCB red tint */
+}
+.sub-heading {
+  color: #da1818;
+}
+
+body {
+  background-color: #faf3f3 !important;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  color: #f8f9fa;
+}
+
+.subtitle {
+  display: inline !important;
+}
+
+.subtitle {
+  display: block !important;
+  margin-top: 0.5rem !important;
+}
