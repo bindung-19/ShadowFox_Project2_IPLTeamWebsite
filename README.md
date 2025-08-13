@@ -1,5 +1,6 @@
 IPL Team Website
 
+
 A responsive and interactive IPL Team Website that showcases team details, player stats, and match updates in an engaging, user-friendly format.  
 This project was developed as part of my ShadowFox Internship to demonstrate front-end, backend web development, UI design, and responsive layout implementation.
 
@@ -23,11 +24,11 @@ It is designed for smooth navigation and quick access to relevant team data, mak
 
 
 📜 License
-Distributed under the MIT License.
-See LICENSE for more information.
+- Distributed under the MIT License.
+- See LICENSE for more information.
 
 🙏 Acknowledgments
-IPL official resources for team & player data inspiration
-GitHub Pages for deployment
-Cricket fans everywhere
+- IPL official resources for team & player data inspiration
+- GitHub Pages for deployment
+- Cricket fans everywhere
 
