@@ -20,6 +20,9 @@ It is designed for smooth navigation and quick access to relevant team data, mak
 - **Version Control:** Git & GitHub
 - **Tools:** VS Code, Chrome DevTools
 
+* Demo video
+- https://github.com/user-attachments/assets/2f1178ad-6dd0-492a-afc1-0753771088a5
+
 📜 License
 - Distributed under the MIT License.
 - See LICENSE for more information.
